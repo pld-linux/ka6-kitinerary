@@ -38,7 +38,7 @@ BuildRequires:	libxml2-devel >= 2
 BuildRequires:	ninja
 BuildRequires:	poppler-devel
 BuildRequires:	qt6-build >= %{qtver}
-BuildRequires:	rpmbuild(macros) >= 1.605
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -78,15 +78,16 @@ Pliki nagłówkowe dla programistów używających %{kaname}.
 	%{!?with_tests:-DBUILD_TESTING=OFF} \
 	-DKDE_INSTALL_DOCBUNDLEDIR=%{_kdedocdir} \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+
 %ninja_build -C build
 
 %if %{with tests}
 ctest --test-dir build
 %endif
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %ninja_install -C build
 
 %find_lang %{kaname} --all-name --with-kde
