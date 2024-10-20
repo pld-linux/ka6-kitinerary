@@ -44,7 +44,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	zlib-devel
 BuildRequires:	zxing-cpp-devel
-Obsoletes:	ka5-%{kaname} < %{version}
+Obsoletes:	ka5-kitinerary < 24
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
