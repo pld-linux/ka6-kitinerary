@@ -101,7 +101,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libKPim6Itinerary.so.*.*
 %ghost %{_libdir}/libKPim6Itinerary.so.6
-%attr(755,root,root) %{_prefix}/libexec/kf6/kitinerary-extractor
+%attr(755,root,root) %{_libexecdir}/kf6/kitinerary-extractor
 %{_datadir}/mime/packages/application-vnd-kde-itinerary.xml
 %{_datadir}/qlogging-categories6/org_kde_kitinerary.categories
 
