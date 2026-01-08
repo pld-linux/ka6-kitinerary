@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.12.0
+%define		kdeappsver	25.12.1
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kitinerary
 Summary:	KDE Itinerary - digital travel assistent
 Summary(pl.UTF-8):	KDE Itinerary - cyfrowy asystent podróży
 Name:		ka6-%{kaname}
-Version:	25.12.0
+Version:	25.12.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	8fe72810fee2ece5cf552e3f5aa830cc
+# Source0-md5:	20be3471d4995da110e4d28a1f206a75
 URL:		https://community.kde.org/KDE_PIM/KDE_Itinerary
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
